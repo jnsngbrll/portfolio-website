@@ -7,21 +7,21 @@ export const userData = {
   address: 'Tarlac, Capas, Estrada, Philippines',
   projects: [
     {
-      title: 'Project',
+      title: 'Gsources',
       description:
         'Enhance your web design skills for free with Gsources. Explore our curated collection of templates assets and expert insights. Unlock your creativity and design without limits!',
       image: projectImage,
       link: 'https://gsources.netlify.app/',
     },
     {
-      title: 'Project',
+      title: 'Gsources',
       description:
         'Enhance your web design skills for free with Gsources. Explore our curated collection of templates assets and expert insights. Unlock your creativity and design without limits!',
       image: projectImage,
       link: 'https://gsources.netlify.app/',
     },
     {
-      title: 'Project',
+      title: 'Gsources',
       description:
         'Enhance your web design skills for free with Gsources. Explore our curated collection of templates assets and expert insights. Unlock your creativity and design without limits!',
       image: projectImage,

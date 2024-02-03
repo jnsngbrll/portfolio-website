@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Hero = () => {
   return (
-    <div className="flex items-center justify-between my-52">
+    <div className="flex items-center justify-between my-40">
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-2">
           <p className="text-5xl text-[--secondary] font-bold">Hi there!</p>
@@ -13,6 +13,7 @@ export const Hero = () => {
             <span className="ml-2 text-5xl text-[--secondary] font-bold">
               Jansen Gabrillo
             </span>
+            ,
           </p>
           <p className="text-[--accent]">
             a 20-year-old BSIT student at the Dominican College of Tarlac.
