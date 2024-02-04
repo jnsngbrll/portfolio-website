@@ -1,12 +1,14 @@
 import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { userData } from '../data/userData';
 import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { IoMoon, IoSunny } from 'react-icons/io5';
 import useLocalStorage from 'use-local-storage';
+import { FaLongArrowAltDown } from 'react-icons/fa';
 
 export const Header = () => {
   const [theme, setTheme] = useLocalStorage('dark', 'light');
+  const location = useLocation();
 
   useEffect(() => {
     document.body.setAttribute('color-scheme', theme);
@@ -15,6 +17,13 @@ export const Header = () => {
   const handleSwitchTheme = () => {
     setTheme((prevTheme) => (prevTheme === 'light' ? 'dark' : 'light'));
   };
+
+  const navItems = [
+    { label: 'About', link: '/about' },
+    { label: 'Projects', link: '/projects' },
+    { label: 'Experience', link: '/experience' },
+    { label: 'Contact', link: '/contact' },
+  ];
 
   return (
     <div className="max-w-7xl mx-auto mt-10">
@@ -25,11 +34,24 @@ export const Header = () => {
           </Link>
         </div>
 
-        <div className="flex items-center gap-8 text-[--accent] font-semibold">
-          <Link to="/about">About</Link>
-          <Link>Projects</Link>
-          <Link>Experience</Link>
-          <Link>Contact</Link>
+        <div className="flex items-center gap-8 font-semibold">
+          {navItems.map((nav) => (
+            <Link
+              to={nav.link}
+              className={`flex items-center gap-1 ${
+                location.pathname === nav.link
+                  ? 'text-[--secondary]'
+                  : 'text-[--accent] '
+              }`}
+            >
+              {nav.label}
+              {location.pathname === nav.link ? (
+                <FaLongArrowAltDown size={15} />
+              ) : (
+                ''
+              )}
+            </Link>
+          ))}
         </div>
 
         <div className="flex items-center gap-8 text-lg">
@@ -46,7 +68,7 @@ export const Header = () => {
           </div>
           <div onClick={handleSwitchTheme}>
             {theme === 'light' ? (
-              <IoMoon className="text-[--accent]" />
+              <IoMoon className="text-[--secondary]" />
             ) : (
               <IoSunny className="text-[#FFFF00]" />
             )}

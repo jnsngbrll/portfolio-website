@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export const Hero = () => {
   return (
-    <div className="flex items-center justify-between my-40">
+    <div className="flex items-center justify-between my-48">
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-2">
           <p className="text-5xl text-[--secondary] font-bold">Hi there!</p>
