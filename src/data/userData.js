@@ -14,7 +14,7 @@ export const userData = {
   designation: 'Student',
   email: 'gabrillojansen@gmail.com',
   phone: '09669151754',
-  address: 'Tarlac',
+  address: 'Tarlac, Philippines',
   tools: [
     { title: 'Html', logo: htmlLogo },
     { title: 'Css', logo: cssLogo },
