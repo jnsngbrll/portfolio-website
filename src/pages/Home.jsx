@@ -14,7 +14,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="max-w-6xl mx-auto">
       <Hero />
       <div className="flex flex-col gap-8 py-20">
         <div className="flex items-center justify-between">
@@ -32,6 +32,7 @@ export const Home = () => {
         </div>
         {userData.projects.map((project, index) => (
           <Link
+            key={index}
             data-aos="zoom-in-up"
             to={project.link}
             className="relative flex bg-gradient-to-r from-[--accent] to-[--primary] group"

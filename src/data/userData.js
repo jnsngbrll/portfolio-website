@@ -49,9 +49,9 @@ export const userData = {
       link: 'https://gsources.netlify.app/',
     },
   ],
-  socialLinks: {
-    facebook: 'https://www.facebook.com/jnsngbrll',
-    linkedin: 'https://www.linkedin.com/in/jnsngbrll/',
-    github: 'https://github.com/jnsngbrll',
-  },
+  socials: [
+    { name: 'Facebook', url: 'https://www.facebook.com/jnsngbrll' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jnsngbrll/' },
+    { name: 'GitHub', url: 'https://github.com/jnsngbrll' },
+  ],
 };

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { userData } from '../data/userData';
-import { FaLongArrowAltRight } from 'react-icons/fa';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 import { FiPhone } from 'react-icons/fi';
 import { LuUser2 } from 'react-icons/lu';
 import { MdOutlineLocationOn } from 'react-icons/md';
@@ -9,7 +9,7 @@ import { CgMail } from 'react-icons/cg';
 
 export const About = () => {
   return (
-    <div className="max-w-7xl mx-auto flex flex-col gap-10">
+    <div className="max-w-6xl mx-auto flex flex-col gap-10">
       <h1 className="text-9xl text-[--secondary] font-extrabold mt-20">
         About
       </h1>
@@ -20,21 +20,21 @@ export const About = () => {
               <h1 className="text-[--accent] border-b inline-block">Profile</h1>
             </div>
             <div className="flex flex-col gap-1 text-[--secondary]">
-              <p className="flex items-center gap-2 font-semibold">
-                <LuUser2 size={20} /> {userData.designation}
+              <p className="flex items-center gap-2">
+                <LuUser2 size={15} /> {userData.designation}
               </p>
-              <p className="flex items-center gap-2 font-semibold">
-                <FiPhone size={20} /> {userData.phone}
+              <p className="flex items-center gap-2">
+                <FiPhone size={15} /> {userData.phone}
               </p>
-              <p className="flex items-center gap-2 font-semibold">
+              <p className="flex items-center gap-2">
                 <span>
-                  <MdOutlineLocationOn size={20} />
+                  <MdOutlineLocationOn size={15} />
                 </span>
                 {userData.address}
               </p>
-              <p className="flex items-center gap-2 font-semibold">
+              <p className="flex items-center gap-2">
                 <span>
-                  <CgMail size={20} />
+                  <CgMail size={15} />
                 </span>
                 {userData.email}
               </p>
@@ -44,35 +44,20 @@ export const About = () => {
             <div>
               <h1 className="text-[--accent] border-b inline-block">Socials</h1>
             </div>
-            <div className="flex flex-col gap-1 text-[--secondary]">
-              <Link
-                to={userData.socialLinks.facebook}
-                className="relative w-[100px] flex items-center gap-2 font-semibold group"
-              >
-                <p>Facebook</p>
-                <div className="absolute right-0 group-hover:right-[-10px]">
-                  <FaLongArrowAltRight />
-                </div>
-              </Link>
-              <Link
-                to={userData.socialLinks.linkedin}
-                className="relative w-[100px] flex items-center gap-2 font-semibold group"
-              >
-                <p>LinkedIn</p>
-                <div className="absolute right-0 group-hover:right-[-10px]">
-                  <FaLongArrowAltRight />
-                </div>
-              </Link>
-              <Link
-                to={userData.socialLinks.github}
-                className="relative w-[100px] flex items-center gap-2 font-semibold group"
-              >
-                <p>Github</p>
-                <div className="absolute right-0 group-hover:right-[-10px]">
-                  <FaLongArrowAltRight />
-                </div>
-              </Link>
-            </div>
+            {userData.socials.map((social, index) => (
+              <div className="flex flex-col gap-1 text-[--secondary]">
+                <Link
+                  key={index}
+                  to={social.url}
+                  className="relative w-[100px] flex items-center gap-2 group"
+                >
+                  <p>{social.name}</p>
+                  <div className="absolute right-0 group-hover:right-[-10px]">
+                    <IoIosArrowRoundForward size={20} />
+                  </div>
+                </Link>
+              </div>
+            ))}
           </div>
         </div>
 
@@ -98,7 +83,7 @@ export const About = () => {
             <div>
               <h1 className="text-[--accent] border-b inline-block">Tools</h1>
             </div>
-            <div className="grid grid-cols-7 gap-8">
+            <div className="grid grid-cols-6 gap-8">
               {userData.tools.map((tool) => (
                 <div className="w-[100px] h-[100px] flex items-center justify-center bg-[#ffffff] drop-shadow-xl p-4 rounded-md">
                   <img src={tool.logo} alt="" />
