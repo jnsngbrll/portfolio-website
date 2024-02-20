@@ -3,7 +3,7 @@ import { Hero } from '../components/Hero';
 import { userData } from '../data/userData';
 import { Link } from 'react-router-dom';
 import Aos from 'aos';
-import { FaLongArrowAltRight } from 'react-icons/fa';
+import { IoIosArrowRoundForward } from 'react-icons/io';
 
 export const Home = () => {
   useEffect(() => {
@@ -27,7 +27,7 @@ export const Home = () => {
             className="flex items-center gap-2 hover:gap-4 text-[#000000] font-semibold bg-[#ffffff] drop-shadow-md py-2 px-8 rounded"
           >
             View All
-            <FaLongArrowAltRight />
+            <IoIosArrowRoundForward size={20} />
           </Link>
         </div>
         {userData.projects.map((project, index) => (
