@@ -1,10 +1,20 @@
 import {
+  FaHtml5,
+  FaCss3Alt,
+  FaReact,
+  FaNodeJs,
+  FaPhp,
+  FaBootstrap,
   FaFacebook,
   FaLinkedin,
   FaGithub,
   FaInstagram,
   FaTiktok,
 } from 'react-icons/fa';
+
+import { IoLogoJavascript } from 'react-icons/io5';
+import { SiTailwindcss, SiExpress, SiMongodb, SiMysql } from 'react-icons/si';
+
 import projectImage from '../assets/project.png';
 import htmlLogo from '../assets/html-logo.png';
 import cssLogo from '../assets/css-logo.png';
@@ -23,15 +33,17 @@ export const userData = {
   phone: '+63 9669151754',
   address: 'Tarlac, Philippines',
   tools: [
-    { title: 'Html', logo: htmlLogo },
-    { title: 'Css', logo: cssLogo },
-    { title: 'JavaScript', logo: javascriptLogo },
-    { title: 'Tailwind', logo: tailwindLogo },
-    { title: 'React', logo: reactLogo },
-    { title: 'Node', logo: nodeLogo },
-    { title: 'Express', logo: expressLogo },
-    { title: 'mongoDB', logo: mongodbLogo },
-    { title: 'MySQL', logo: mysqlLogo },
+    { title: 'Html', logo: <FaHtml5 /> },
+    { title: 'Css', logo: <FaCss3Alt /> },
+    { title: 'JavaScript', logo: <IoLogoJavascript /> },
+    { title: 'Tailwind', logo: <SiTailwindcss /> },
+    { title: 'Bootstrap', logo: <FaBootstrap /> },
+    { title: 'React', logo: <FaReact /> },
+    { title: 'Node', logo: <FaNodeJs /> },
+    { title: 'Express', logo: <SiExpress /> },
+    { title: 'mongoDB', logo: <SiMongodb /> },
+    { title: 'PHP', logo: <FaPhp /> },
+    { title: 'MySQL', logo: <SiMysql /> },
   ],
   projects: [
     {

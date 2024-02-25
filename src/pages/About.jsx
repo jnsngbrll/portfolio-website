@@ -83,7 +83,7 @@ export const About = () => {
             <div className="grid grid-cols-6 gap-8">
               {userData.tools.map((tool) => (
                 <div className="w-[100px] h-[100px] flex items-center justify-center bg-[#ffffff] drop-shadow-xl p-4 rounded-md">
-                  <img src={tool.logo} alt="" />
+                  <p className="text-[#000000] text-4xl">{tool.logo}</p>
                 </div>
               ))}
             </div>
