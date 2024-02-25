@@ -1,6 +1,7 @@
 import React from 'react';
 import profile from '../assets/profile.png';
 import { Link } from 'react-router-dom';
+import { FaRegHeart } from 'react-icons/fa';
 
 export const Hero = () => {
   return (
@@ -19,12 +20,19 @@ export const Hero = () => {
             a 20-year-old BSIT student at the Dominican College of Tarlac.
           </p>
         </div>
-        <div>
+        <div className="flex items-center gap-4">
           <Link
             to="/contact"
-            className="text-[--primary] font-bold bg-[--secondary] py-2 px-4 rounded"
+            className="text-[--primary] font-bold bg-[--secondary] py-2 px-4 border border-[--secondary] rounded"
           >
             Get in touch, Let's talk
+          </Link>
+          <Link
+            to="https://www.facebook.com/jnsngbrll"
+            className="flex items-center gap-2 py-2 px-4 text-[--secondary] font-bold border border-[--secondary] rounded"
+          >
+            <p>Follow</p>
+            <FaRegHeart />
           </Link>
         </div>
       </div>
