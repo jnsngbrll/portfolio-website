@@ -2,10 +2,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { userData } from '../data/userData';
 import { IoIosArrowRoundForward } from 'react-icons/io';
-import { FiPhone } from 'react-icons/fi';
-import { LuUser2 } from 'react-icons/lu';
-import { MdOutlineLocationOn } from 'react-icons/md';
-import { CgMail } from 'react-icons/cg';
+import { LuUser2, LuPhone } from 'react-icons/lu';
+import { MdOutlineLocationOn, MdOutlineEmail } from 'react-icons/md';
 
 export const About = () => {
   return (
@@ -17,14 +15,16 @@ export const About = () => {
         <div className="flex flex-col gap-8">
           <div className="flex flex-col gap-2">
             <div>
-              <h1 className="text-[--accent] border-b inline-block">Profile</h1>
+              <h1 className="text-[--accent] border-b inline-block">
+                Personal
+              </h1>
             </div>
             <div className="flex flex-col gap-1 text-[--secondary]">
               <p className="flex items-center gap-2">
                 <LuUser2 size={15} /> {userData.designation}
               </p>
               <p className="flex items-center gap-2">
-                <FiPhone size={15} /> {userData.phone}
+                <LuPhone size={15} /> {userData.phone}
               </p>
               <p className="flex items-center gap-2">
                 <span>
@@ -34,7 +34,7 @@ export const About = () => {
               </p>
               <p className="flex items-center gap-2">
                 <span>
-                  <CgMail size={15} />
+                  <MdOutlineEmail size={15} />
                 </span>
                 {userData.email}
               </p>
@@ -73,10 +73,7 @@ export const About = () => {
               aspernatur, ad fugiat nostrum at perferendis tenetur? Accusamus,
               voluptatem rerum. Corrupti ipsam molestias labore excepturi
               deleniti cupiditate voluptas necessitatibus? Lorem ipsum dolor sit
-              amet consectetur adipisicing elit. Porro voluptas distinctio
-              dolore adipisci sequi in doloribus quibusdam deleniti, excepturi
-              possimus placeat soluta sapiente facilis, quod accusamus a, cum
-              unde. Incidunt?
+              amet consectetur adipisicing elit.
             </p>
           </div>
           <div className="flex flex-col gap-4">

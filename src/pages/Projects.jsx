@@ -27,7 +27,7 @@ export const Projects = () => {
               <img
                 src={project.image}
                 alt=""
-                className="w-[500px] transition-all duration-1000 group-hover:scale-125"
+                className="w-[400px] transition-all duration-1000 group-hover:scale-125"
               />
             </div>
             <div className="w-[300px] p-8">

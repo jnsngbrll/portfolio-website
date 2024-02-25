@@ -1,3 +1,10 @@
+import {
+  FaFacebook,
+  FaLinkedin,
+  FaGithub,
+  FaInstagram,
+  FaTiktok,
+} from 'react-icons/fa';
 import projectImage from '../assets/project.png';
 import htmlLogo from '../assets/html-logo.png';
 import cssLogo from '../assets/css-logo.png';
@@ -13,7 +20,7 @@ export const userData = {
   name: 'Jansen Gabrillo',
   designation: 'Student',
   email: 'gabrillojansen@gmail.com',
-  phone: '09669151754',
+  phone: '+63 9669151754',
   address: 'Tarlac, Philippines',
   tools: [
     { title: 'Html', logo: htmlLogo },
@@ -50,8 +57,26 @@ export const userData = {
     },
   ],
   socials: [
-    { name: 'Facebook', url: 'https://www.facebook.com/jnsngbrll' },
-    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jnsngbrll/' },
-    { name: 'GitHub', url: 'https://github.com/jnsngbrll' },
+    {
+      name: 'Facebook',
+      icon: <FaFacebook />,
+      url: 'https://www.facebook.com/jnsngbrll',
+    },
+    {
+      name: 'LinkedIn',
+      icon: <FaLinkedin />,
+      url: 'https://www.linkedin.com/in/jnsngbrll/',
+    },
+    { name: 'GitHub', icon: <FaGithub />, url: 'https://github.com/jnsngbrll' },
+    {
+      name: 'Instagram',
+      icon: <FaInstagram />,
+      url: 'https://www.instagram.com/jnsngbrll/',
+    },
+    {
+      name: 'TikTok',
+      icon: <FaTiktok />,
+      url: 'https://www.tiktok.com/@jnsngbrll?lang=en',
+    },
   ],
 };
