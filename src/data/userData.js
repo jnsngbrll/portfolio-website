@@ -16,15 +16,6 @@ import { IoLogoJavascript } from 'react-icons/io5';
 import { SiTailwindcss, SiExpress, SiMongodb, SiMysql } from 'react-icons/si';
 
 import projectImage from '../assets/project.png';
-import htmlLogo from '../assets/html-logo.png';
-import cssLogo from '../assets/css-logo.png';
-import javascriptLogo from '../assets/javascript-logo.png';
-import tailwindLogo from '../assets/tailwind-css-logo.png';
-import reactLogo from '../assets/react-logo.png';
-import expressLogo from '../assets/express-logo.png';
-import nodeLogo from '../assets/nodejs-logo.jpg';
-import mongodbLogo from '../assets/mongodb-logo.png';
-import mysqlLogo from '../assets/mysql-logo.png';
 
 export const userData = {
   name: 'Jansen Gabrillo',
