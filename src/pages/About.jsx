@@ -65,15 +65,8 @@ export const About = () => {
           <div>
             <p className="text-xl text-[--secondary]">
               I'm Jansen Gabrillo, a 20-year-old BSIT student at the Dominican
-              College of Tarlac. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Molestias aliquam sunt suscipit ea, pariatur
-              culpa, accusantium rerum, aperiam illo nulla quam a repellat!
-              Alias sequi earum eum impedit deserunt vel. Lorem ipsum dolor, sit
-              amet consectetur adipisicing elit. Quae voluptatibus corporis
-              aspernatur, ad fugiat nostrum at perferendis tenetur? Accusamus,
-              voluptatem rerum. Corrupti ipsam molestias labore excepturi
-              deleniti cupiditate voluptas necessitatibus? Lorem ipsum dolor sit
-              amet consectetur adipisicing elit.
+              College of Tarlac. I enjoy building web applications and
+              practicing new technologies to enhance my skills in coding.
             </p>
           </div>
           <div className="flex flex-col gap-4">
@@ -90,7 +83,6 @@ export const About = () => {
           </div>
         </div>
       </div>
-      <div></div>
     </div>
   );
 };
