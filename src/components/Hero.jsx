@@ -43,7 +43,7 @@ export const Hero = () => {
         <div>
           <img src={profile} alt="" className="drop-shadow-2xl" />
           <div className="absolute top-0 right-0 text-7xl text-[--secondary] group-hover:opacity-0">
-            <p className="text-xl font-bold">Hover me</p>
+            <p className="text-xl font-bold">Hover Me</p>
             <PiArrowElbowRightUpThin />
           </div>
         </div>
