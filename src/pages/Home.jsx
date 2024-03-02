@@ -3,7 +3,6 @@ import { Hero } from '../components/Hero';
 import { userData } from '../data/userData';
 import { Link } from 'react-router-dom';
 import Aos from 'aos';
-import { IoIosArrowRoundForward } from 'react-icons/io';
 
 export const Home = () => {
   useEffect(() => {
@@ -14,7 +13,7 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto">
+    <div className="max-w-6xl mx-auto px-4">
       <Hero />
       <div className="flex flex-col gap-8 py-20">
         <div className="flex items-center justify-between">
@@ -24,10 +23,11 @@ export const Home = () => {
           <Link
             to="/projects"
             onClick={() => window.scrollTo(0, 0)}
-            className="flex items-center gap-2 hover:gap-4 text-[#000000] font-semibold bg-[#ffffff] drop-shadow-md py-2 px-8 rounded"
+            className="w-[90px] h-[40px] flex items-center justify-center border border-[--secondary] relative group"
           >
-            View All
-            <IoIosArrowRoundForward size={20} />
+            <span className="absolute transform translate-x-[30px] group-hover:translate-x-0 font-bold text-[--secondary] bg-[--primary]">
+              View All
+            </span>
           </Link>
         </div>
         {userData.projects.map((project, index) => (

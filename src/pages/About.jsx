@@ -7,7 +7,7 @@ import { MdOutlineLocationOn, MdOutlineEmail } from 'react-icons/md';
 
 export const About = () => {
   return (
-    <div className="max-w-6xl mx-auto flex flex-col gap-10">
+    <div className="max-w-6xl mx-auto px-4 flex flex-col gap-10">
       <h1 className="text-9xl text-[--secondary] font-extrabold mt-20">
         About
       </h1>

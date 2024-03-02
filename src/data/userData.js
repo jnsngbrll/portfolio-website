@@ -38,6 +38,12 @@ export const userData = {
   ],
   projects: [
     {
+      title: 'Shoewares',
+      description: '',
+      image: projectImage,
+      link: 'https://shoewares.netlify.app/',
+    },
+    {
       title: 'Toolwares',
       description: '',
       image: projectImage,
@@ -45,15 +51,7 @@ export const userData = {
     },
     {
       title: 'Gsources',
-      description:
-        'Enhance your web design skills for free with Gsources. Explore our curated collection of templates assets and expert insights. Unlock your creativity and design without limits!',
-      image: projectImage,
-      link: 'https://gsources.netlify.app/',
-    },
-    {
-      title: 'Gsources',
-      description:
-        'Enhance your web design skills for free with Gsources. Explore our curated collection of templates assets and expert insights. Unlock your creativity and design without limits!',
+      description: '',
       image: projectImage,
       link: 'https://gsources.netlify.app/',
     },

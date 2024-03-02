@@ -1,11 +1,13 @@
 import React from 'react';
 import profile from '../assets/profile.png';
 import { Link } from 'react-router-dom';
-import { FaRegHeart } from 'react-icons/fa';
+import { userData } from '../data/userData';
+import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { PiArrowElbowRightUpThin } from 'react-icons/pi';
 
 export const Hero = () => {
   return (
-    <div className="flex items-center justify-between my-48">
+    <div className="flex items-center justify-between py-40">
       <div className="flex flex-col gap-12">
         <div className="flex flex-col gap-2">
           <p className="text-5xl text-[--secondary] font-bold">Hi there!</p>
@@ -23,21 +25,39 @@ export const Hero = () => {
         <div className="flex items-center gap-4">
           <Link
             to="/contact"
-            className="text-[--primary] font-bold bg-[--secondary] py-2 px-4 border border-[--secondary] rounded"
+            className="font-bold text-[--primary] hover:text-[--secondary] bg-[--secondary] hover:bg-[--primary] py-2 px-4 border border-[--secondary]"
           >
             Get in touch, Let's talk
           </Link>
           <Link
             to="https://www.facebook.com/jnsngbrll"
-            className="flex items-center gap-2 py-2 px-4 text-[--secondary] font-bold border border-[--secondary] rounded"
+            className="w-[80px] h-[40px] flex items-center justify-center border border-[--secondary] relative group"
           >
-            <p>Follow</p>
-            <FaRegHeart />
+            <span class="absolute transform translate-x-[30px] group-hover:translate-x-0 font-bold text-[--secondary] bg-[--primary]">
+              Follow
+            </span>
           </Link>
         </div>
       </div>
-      <div>
-        <img src={profile} alt="" className="drop-shadow-2xl" />
+      <div className="relative cursor-pointer group">
+        <div>
+          <img src={profile} alt="" className="drop-shadow-2xl" />
+          <div className="absolute top-0 right-0 text-7xl text-[--secondary] group-hover:opacity-0">
+            <p className="text-xl font-bold">Hover me</p>
+            <PiArrowElbowRightUpThin />
+          </div>
+        </div>
+        <div className="absolute top-40 left-[-35px] opacity-0 group-hover:opacity-100 flex items-center gap-4 text-xl text-[--secondary]">
+          <Link to={userData.socials[0].url} className="text-[#316FF6]">
+            <FaFacebook />
+          </Link>
+          <Link to={userData.socials[1].url} className="text-[#0077b5]">
+            <FaLinkedin />
+          </Link>
+          <Link to={userData.socials[2].url} className="text-[--secondary]">
+            <FaGithub />
+          </Link>
+        </div>
       </div>
     </div>
   );
