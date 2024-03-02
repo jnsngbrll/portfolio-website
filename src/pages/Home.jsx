@@ -17,10 +17,14 @@ export const Home = () => {
       <Hero />
       <div className="flex flex-col gap-8 py-20">
         <div className="flex items-center justify-between">
-          <h1 className="text-9xl text-[--secondary] font-extrabold">
+          <h1
+            data-aos="fade-right"
+            className="text-9xl text-[--secondary] font-extrabold"
+          >
             Projects
           </h1>
           <Link
+            data-aos="fade-left"
             to="/projects"
             onClick={() => window.scrollTo(0, 0)}
             className="w-[90px] h-[40px] flex items-center justify-center border border-[--secondary] relative group"
@@ -32,8 +36,8 @@ export const Home = () => {
         </div>
         {userData.projects.map((project, index) => (
           <Link
+            data-aos="fade-up"
             key={index}
-            data-aos="zoom-in-up"
             to={project.link}
             className="relative flex bg-gradient-to-r from-[--accent] to-[--primary] group"
           >

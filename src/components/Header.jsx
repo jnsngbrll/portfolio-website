@@ -3,6 +3,7 @@ import { Link, useLocation } from 'react-router-dom';
 import { FiMoon, FiSun } from 'react-icons/fi';
 import useLocalStorage from 'use-local-storage';
 import { IoIosArrowRoundDown } from 'react-icons/io';
+import Aos from 'aos';
 
 export const Header = () => {
   const [theme, setTheme] = useLocalStorage('dark', 'light');
@@ -23,8 +24,15 @@ export const Header = () => {
     { label: 'Contact', link: '/contact' },
   ];
 
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   return (
-    <div className="max-w-6xl mx-auto px-4 pt-10">
+    <div data-aos="fade-down" className="max-w-6xl mx-auto px-4 pt-10">
       <div className="flex items-center justify-between">
         <div>
           <Link to="/">
@@ -40,7 +48,7 @@ export const Header = () => {
               className={`flex items-center gap-1 ${
                 location.pathname === nav.link
                   ? 'text-[--secondary]'
-                  : 'text-[--accent]'
+                  : 'text-[--accent] hover:text-[--secondary]'
               }`}
             >
               {nav.label}

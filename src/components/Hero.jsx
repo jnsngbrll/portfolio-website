@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import Aos from 'aos';
 import profile from '../assets/profile.png';
 import { Link } from 'react-router-dom';
 import { userData } from '../data/userData';
@@ -6,9 +7,16 @@ import { FaFacebook, FaLinkedin, FaGithub } from 'react-icons/fa';
 import { PiArrowElbowRightUpThin } from 'react-icons/pi';
 
 export const Hero = () => {
+  useEffect(() => {
+    Aos.init({
+      duration: 1000,
+      easing: 'ease-in-out',
+    });
+  }, []);
+
   return (
     <div className="flex items-center justify-between py-40">
-      <div className="flex flex-col gap-12">
+      <div data-aos="fade-right" className="flex flex-col gap-12">
         <div className="flex flex-col gap-2">
           <p className="text-5xl text-[--secondary] font-bold">Hi there!</p>
           <p className="text-xl text-[--secondary] font-bold">
@@ -39,7 +47,7 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
-      <div className="relative cursor-pointer group">
+      <div data-aos="fade-left" className="relative cursor-pointer group">
         <div>
           <img src={profile} alt="" className="drop-shadow-2xl" />
           <div className="absolute top-0 right-0 text-7xl text-[--secondary] group-hover:opacity-0">
