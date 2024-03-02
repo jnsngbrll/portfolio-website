@@ -12,14 +12,14 @@ export const About = () => {
         About
       </h1>
       <div className="flex gap-60 my-10">
-        <div className="flex flex-col gap-8">
-          <div className="flex flex-col gap-2">
+        <div className="space-y-8">
+          <div className="space-y-2">
             <div>
               <h1 className="text-[--accent] border-b inline-block">
                 Personal
               </h1>
             </div>
-            <div className="flex flex-col gap-1 text-[--secondary]">
+            <div className="space-y-1 text-[--secondary]">
               <p className="flex items-center gap-2">
                 <LuUser2 size={15} /> {userData.designation}
               </p>
@@ -40,12 +40,12 @@ export const About = () => {
               </p>
             </div>
           </div>
-          <div className="flex flex-col gap-2">
+          <div className="space-y-2">
             <div>
               <h1 className="text-[--accent] border-b inline-block">Socials</h1>
             </div>
             {userData.socials.map((social, index) => (
-              <div className="flex flex-col gap-1 text-[--secondary]">
+              <div className="space-y-1 text-[--secondary]">
                 <Link
                   key={index}
                   to={social.url}
@@ -61,7 +61,7 @@ export const About = () => {
           </div>
         </div>
 
-        <div className="flex flex-col gap-8">
+        <div className="space-y-8">
           <div>
             <p className="text-xl text-[--secondary]">
               I'm Jansen Gabrillo, a 20-year-old BSIT student at the Dominican
@@ -69,7 +69,7 @@ export const About = () => {
               practicing new technologies to enhance my skills in coding.
             </p>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="space-y-4">
             <div>
               <h1 className="text-[--accent] border-b inline-block">Tools</h1>
             </div>

@@ -15,7 +15,7 @@ export const Home = () => {
   return (
     <div className="max-w-6xl mx-auto px-4">
       <Hero />
-      <div className="flex flex-col gap-8 py-20">
+      <div className="space-y-8 py-20">
         <div className="flex items-center justify-between">
           <h1
             data-aos="fade-right"

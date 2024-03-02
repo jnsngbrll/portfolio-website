@@ -16,10 +16,10 @@ export const Projects = () => {
       <h1 className="text-9xl text-[--secondary] font-extrabold mt-20">
         Projects
       </h1>
-      <div className="my-10 flex flex-col gap-8">
+      <div className="my-10 space-y-8">
         {userData.projects.map((project, index) => (
           <Link
-            data-aos="zoom-in-up"
+            data-aos="fade-up"
             to={project.link}
             className="relative flex bg-gradient-to-r from-[--accent] to-[--primary] group"
           >

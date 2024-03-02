@@ -16,8 +16,8 @@ export const Hero = () => {
 
   return (
     <div className="flex items-center justify-between py-40">
-      <div data-aos="fade-right" className="flex flex-col gap-12">
-        <div className="flex flex-col gap-2">
+      <div data-aos="fade-right" className="space-y-12">
+        <div className="space-y-2">
           <p className="text-5xl text-[--secondary] font-bold">Hi there!</p>
           <p className="text-xl text-[--secondary] font-bold">
             I'm
