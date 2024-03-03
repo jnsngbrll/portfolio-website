@@ -17,19 +17,13 @@ export const Hero = () => {
   return (
     <div className="flex items-center justify-between py-40">
       <div data-aos="fade-right" className="space-y-12">
-        <div className="space-y-2">
-          <p className="text-5xl text-[--secondary] font-bold">Hi there!</p>
-          <p className="text-xl text-[--secondary] font-bold">
-            I'm
-            <span className="ml-2 text-5xl text-[--secondary] font-bold">
-              Jansen Gabrillo
-            </span>
-            ,
-          </p>
-          <p className="text-[--accent]">
+        <p className="space-y-2 text-5xl text-[--secondary] font-bold">
+          <span>Hi there!</span>
+          <span className="flow-root">I'm Jansen Gabrillo,</span>
+          <span className="flow-root text-sm text-[--accent]">
             a 20-year-old BSIT student at the Dominican College of Tarlac.
-          </p>
-        </div>
+          </span>
+        </p>
         <div className="flex items-center gap-4">
           <Link
             to="/contact"

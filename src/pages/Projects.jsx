@@ -12,10 +12,8 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto px-4">
-      <h1 className="text-9xl text-[--secondary] font-extrabold mt-20">
-        Projects
-      </h1>
+    <div className="max-w-6xl mx-auto py-20 px-4">
+      <h1 className="text-9xl text-[--secondary] font-extrabold">Projects</h1>
       <div className="my-10 space-y-8">
         {userData.projects.map((project, index) => (
           <Link
@@ -32,7 +30,7 @@ export const Projects = () => {
             </div>
             <div className="w-[300px] p-8">
               <h1 className="text-3xl text-[--secondary] font-bold">
-                {project.title}
+                {project.name}
               </h1>
               <p className="text-[--accent]">{project.description}</p>
             </div>

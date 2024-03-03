@@ -50,7 +50,7 @@ export const Home = () => {
             </div>
             <div className="w-[300px] p-8">
               <h1 className="text-3xl text-[--secondary] font-bold">
-                {project.title}
+                {project.name}
               </h1>
               <p className="text-[--accent]">{project.description}</p>
             </div>
