@@ -5,11 +5,11 @@ import { IoIosArrowRoundForward } from 'react-icons/io';
 
 export const About = () => {
   return (
-    <div className="max-w-6xl mx-auto py-10 px-4 flex flex-col gap-10 md:py-15 lg:py-20">
+    <div className="max-w-6xl mx-auto py-10 px-4 flex flex-col gap-8 md:py-15 lg:py-20">
       <h1 className="text-center text-5xl sm:text-7xl text-[--secondary] font-extrabold md:text-8xl md:text-left lg:text-9xl">
         About
       </h1>
-      <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
         <div className="space-y-8">
           <div className="space-y-2">
             <h1 className="font-bold text-[--accent]">Personal</h1>
