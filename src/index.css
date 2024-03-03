@@ -8,7 +8,7 @@
   --accent: #626567;
 }
 
-[color-scheme='dark'] {
+[theme='dark'] {
   --primary: #000000;
   --secondary: #ffffff;
   --accent: #7b7d7d;

@@ -12,9 +12,11 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto py-20 px-4">
-      <h1 className="text-9xl text-[--secondary] font-extrabold">Projects</h1>
-      <div className="my-10 space-y-8">
+    <div className="max-w-6xl mx-auto py-10 px-4 md:py-15 lg:py-20">
+      <h1 className="text-center text-5xl sm:text-7xl text-[--secondary] font-extrabold md:text-8xl md:text-left lg:text-9xl">
+        Projects
+      </h1>
+      <div className="mt-8 space-y-4 md:space-y-8">
         {userData.projects.map((project, index) => (
           <Link
             data-aos="fade-up"
@@ -28,13 +30,13 @@ export const Projects = () => {
                 className="w-[400px] transition-all duration-1000 group-hover:scale-125"
               />
             </div>
-            <div className="w-[300px] p-8">
-              <h1 className="text-3xl text-[--secondary] font-bold">
+            <div className="w-[300px] p-4 md:p-8">
+              <h1 className="text-xl text-[--secondary] font-bold md:text-3xl">
                 {project.name}
               </h1>
               <p className="text-[--accent]">{project.description}</p>
             </div>
-            <p className="absolute right-0 bottom-8 text-5xl text-[--accent] font-bold">
+            <p className="absolute right-0 bottom-8 text-3xl text-[--accent] font-bold md:text-5xl">
               0{index + 1}
             </p>
           </Link>

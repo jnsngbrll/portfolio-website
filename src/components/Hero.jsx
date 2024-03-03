@@ -15,16 +15,16 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="flex items-center justify-between py-40">
+    <div className="flex flex-col md:flex-row items-center justify-between">
       <div data-aos="fade-right" className="space-y-12">
-        <p className="space-y-2 text-5xl text-[--secondary] font-bold">
+        <p className="text-center space-y-2 text-3xl text-[--secondary] font-bold md:text-left md:text-4xl lg:text-5xl">
           <span>Hi there!</span>
           <span className="flow-root">I'm Jansen Gabrillo,</span>
           <span className="flow-root text-sm text-[--accent]">
             a 20-year-old BSIT student at the Dominican College of Tarlac.
           </span>
         </p>
-        <div className="flex items-center gap-4">
+        <div className="flex flex-col md:flex-row items-center gap-4">
           <Link
             to="/contact"
             className="font-bold text-[--primary] hover:text-[--secondary] bg-[--secondary] hover:bg-[--primary] py-2 px-4 border border-[--secondary]"
@@ -41,7 +41,10 @@ export const Hero = () => {
           </Link>
         </div>
       </div>
-      <div data-aos="fade-left" className="relative cursor-pointer group">
+      <div
+        data-aos="fade-left"
+        className="relative cursor-pointer group order-first md:order-last"
+      >
         <div>
           <img src={profile} alt="" className="drop-shadow-2xl" />
           <div className="absolute top-0 right-0 text-7xl text-[--secondary] group-hover:opacity-0 animate-pulse group-hover:animate-none">
@@ -49,7 +52,7 @@ export const Hero = () => {
             <PiArrowElbowRightUpThin />
           </div>
         </div>
-        <div className="absolute top-40 left-[-35px] opacity-0 group-hover:opacity-100 flex items-center gap-4 text-xl text-[--secondary]">
+        <div className="absolute top-0 opacity-0 group-hover:opacity-100 flex flex-col items-center gap-4 text-xl text-[--secondary] md:top-40 md:-left-9 md:flex-row">
           <Link to={userData.socials[0].url} className="text-[#316FF6]">
             <FaFacebook />
           </Link>
