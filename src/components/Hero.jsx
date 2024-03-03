@@ -15,7 +15,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <div className="flex flex-col md:flex-row items-center justify-between">
+    <div className="flex flex-col md:flex-row items-center justify-between px-4">
       <div data-aos="fade-right" className="space-y-12">
         <p className="text-center space-y-2 text-3xl text-[--secondary] font-bold md:text-left md:text-4xl lg:text-5xl">
           <span>Hi there!</span>
@@ -35,7 +35,7 @@ export const Hero = () => {
             to="https://www.facebook.com/jnsngbrll"
             className="w-[80px] h-[40px] flex items-center justify-center border border-[--secondary] relative group"
           >
-            <span class="absolute transform translate-x-[30px] group-hover:translate-x-0 font-bold text-[--secondary] bg-[--primary]">
+            <span class="absolute transform md:translate-x-[30px] group-hover:translate-x-0 font-bold text-[--secondary] bg-[--primary]">
               Follow
             </span>
           </Link>

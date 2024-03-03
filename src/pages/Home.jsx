@@ -13,11 +13,11 @@ export const Home = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto py-20 px-4">
+    <div className="max-w-6xl mx-auto py-20">
       <div className="space-y-20 md:space-y-40">
         <Hero />
         <div className="space-y-8">
-          <div className="flex flex-col items-center gap-4 md:flex-row justify-between">
+          <div className="flex flex-col items-center gap-4 md:flex-row justify-between px-4">
             <h1
               data-aos="fade-right"
               className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl text-[--secondary] font-extrabold"
@@ -30,12 +30,12 @@ export const Home = () => {
               onClick={() => window.scrollTo(0, 0)}
               className="w-[90px] h-[40px] flex items-center justify-center border border-[--secondary] relative group"
             >
-              <span className="absolute transform translate-x-[30px] group-hover:translate-x-0 font-bold text-[--secondary] bg-[--primary]">
+              <span className="absolute transform md:translate-x-[30px] group-hover:translate-x-0 font-bold text-[--secondary] bg-[--primary]">
                 View All
               </span>
             </Link>
           </div>
-          <div className="space-y-4 md:space-y-8">
+          <div className="space-y-4 md:space-y-8 px-0 md:px-4">
             {userData.projects.map((project, index) => (
               <Link
                 data-aos="fade-up"

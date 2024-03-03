@@ -12,11 +12,11 @@ export const Projects = () => {
   }, []);
 
   return (
-    <div className="max-w-6xl mx-auto py-10 px-4 md:py-15 lg:py-20">
-      <h1 className="text-center text-5xl sm:text-7xl text-[--secondary] font-extrabold md:text-8xl md:text-left lg:text-9xl">
+    <div className="max-w-6xl mx-auto py-10 md:py-15 lg:py-20">
+      <h1 className="text-center text-5xl px-4 sm:text-7xl text-[--secondary] font-extrabold md:text-8xl md:text-left lg:text-9xl">
         Projects
       </h1>
-      <div className="mt-8 space-y-4 md:space-y-8">
+      <div className="mt-8 space-y-4 md:space-y-8 px-0 md:px-4">
         {userData.projects.map((project, index) => (
           <Link
             data-aos="fade-up"
