@@ -56,7 +56,7 @@ export const Home = () => {
                   </h1>
                   <p className="text-[--accent]">{project.description}</p>
                 </div>
-                <p className="absolute right-0 bottom-8 text-3xl text-[--accent] font-bold md:text-5xl">
+                <p className="absolute right-4 bottom-4 text-3xl text-[--accent] font-bold md:text-5xl">
                   0{index + 1}
                 </p>
               </Link>
