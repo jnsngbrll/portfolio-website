@@ -23,6 +23,10 @@ export const userData = {
     { name: 'Designation', label: 'Student' },
     { name: 'Address', label: 'Tarlac, Philippines' },
   ],
+  about: {
+    description:
+      'Im Jansen Gabrillo, a 20-year-old BSIT student at the Dominican College of Tarlac. I enjoy building web applications and practicing new technologies to enhance my skills in coding.',
+  },
   tools: [
     { name: 'Html', logo: <FaHtml5 color="#e34c26" /> },
     { name: 'Css', logo: <FaCss3Alt color="#264de4" /> },

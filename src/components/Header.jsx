@@ -36,9 +36,9 @@ export const Header = () => {
           </Link>
         </div>
         <div className="hidden sm:flex items-center gap-8 font-semibold">
-          {navItems.map((nav, index) => (
+          {navItems.map((nav, idx) => (
             <Link
-              key={index}
+              key={idx}
               to={nav.link}
               className={`flex items-center gap-1 ${
                 location.pathname === nav.link
@@ -62,9 +62,9 @@ export const Header = () => {
         </div>
       </div>
       <div className="mt-2 flex items-center justify-center gap-4 font-semibold sm:hidden">
-        {navItems.map((nav, index) => (
+        {navItems.map((nav, idx) => (
           <Link
-            key={index}
+            key={idx}
             to={nav.link}
             className={`flex items-center ${
               location.pathname === nav.link

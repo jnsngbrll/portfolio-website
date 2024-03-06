@@ -36,10 +36,10 @@ export const Home = () => {
             </Link>
           </div>
           <div className="space-y-4 md:space-y-8 px-0 md:px-4">
-            {userData.projects.map((project, index) => (
+            {userData.projects.map((project, idx) => (
               <Link
                 data-aos="fade-up"
-                key={index}
+                key={idx}
                 to={project.link}
                 className="relative flex bg-gradient-to-r from-[--accent] to-[--primary] group"
               >
@@ -57,7 +57,7 @@ export const Home = () => {
                   <p className="text-[--accent]">{project.description}</p>
                 </div>
                 <p className="absolute right-4 bottom-4 text-3xl text-[--accent] font-bold md:text-5xl">
-                  0{index + 1}
+                  0{idx + 1}
                 </p>
               </Link>
             ))}
