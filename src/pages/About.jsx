@@ -14,11 +14,9 @@ export const About = () => {
           <div className="space-y-2">
             <h1 className="font-bold text-[--accent]">Personal</h1>
             <div className="space-y-1 text-[--secondary]">
-              {userData.personal.map((pers, idx) => (
-                <p key={idx} className="flex-nowrap">
-                  • {pers.label}
-                </p>
-              ))}
+              <p>• {userData.name}</p>
+              <p>• {userData.occupation}</p>
+              <p>• {userData.address}</p>
             </div>
           </div>
           <div className="space-y-2">

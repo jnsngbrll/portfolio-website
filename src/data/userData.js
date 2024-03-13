@@ -18,11 +18,9 @@ import { SiTailwindcss, SiExpress, SiMongodb, SiMysql } from 'react-icons/si';
 import projectImage from '../assets/project.png';
 
 export const userData = {
-  personal: [
-    { name: 'Name', label: 'Jansen Gabrillo' },
-    { name: 'Designation', label: 'Student' },
-    { name: 'Address', label: 'Tarlac, Philippines' },
-  ],
+  name: 'Jansen Gabrillo',
+  occupation: 'Student',
+  address: 'Tarlac, Philippines',
   about: {
     description:
       'Im Jansen Gabrillo, a 20-year-old BSIT student at the Dominican College of Tarlac. I enjoy building web applications and practicing new technologies to enhance my skills in coding.',
@@ -67,12 +65,6 @@ export const userData = {
       url: 'https://www.facebook.com/jnsngbrll',
     },
     {
-      name: 'LinkedIn',
-      icon: <FaLinkedin />,
-      url: 'https://www.linkedin.com/in/jnsngbrll/',
-    },
-    { name: 'GitHub', icon: <FaGithub />, url: 'https://github.com/jnsngbrll' },
-    {
       name: 'Instagram',
       icon: <FaInstagram />,
       url: 'https://www.instagram.com/jnsngbrll/',
@@ -81,6 +73,12 @@ export const userData = {
       name: 'TikTok',
       icon: <FaTiktok />,
       url: 'https://www.tiktok.com/@jnsngbrll?lang=en',
+    },
+    { name: 'GitHub', icon: <FaGithub />, url: 'https://github.com/jnsngbrll' },
+    {
+      name: 'LinkedIn',
+      icon: <FaLinkedin />,
+      url: 'https://www.linkedin.com/in/jnsngbrll/',
     },
   ],
 };
